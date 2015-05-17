@@ -56,7 +56,7 @@ describe UsersController do
 			@mock_app.completed = true
 			@mock_app.save
 			post :submit_payment, :id => @user.id
-			expect(response.location.starts_with?("https://www.sandbox.paypal.com")).to be_true
+			expect(response.location.starts_with?("https://www.paypal.com")).to be_true
 		end
 	end
 end
