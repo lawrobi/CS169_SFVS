@@ -70,7 +70,7 @@ class UsersController < ApplicationController
   def get_paypal_url(payment)
     base_url = request.protocol + request.host
     values = {
-        business: "teamsfvs-business@gmail.com",
+        business: "treasurer@sfvs.org",
         cmd: "_xclick",
         upload: 1,
         return: base_url + "/payment_receipt",
@@ -82,6 +82,6 @@ class UsersController < ApplicationController
         notify_url: base_url + "/verify_payment"
     }
 
-    return "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
+    return "https://www.paypal.com/cgi-bin/webscr?" + values.to_query
   end
 end
