@@ -27,10 +27,10 @@ end
 
 objects_to_create = {}
 
-create_a_user('admin@hostname.com', 'admin123', "", "", "", :admin)
-create_a_user('user2@hostname.com', 'user1234', "John Wick", "Pineapple", "512-123-1235")
-create_a_user('user3@hostname.com', 'user1234', "Kevin Chavez", "Apple", "232-567-4234")
-create_a_user('user4@hostname.com', 'user1234', "Paul Lee", "Orange", "185-323-3523")
+#create_a_user('admin@hostname.com', 'admin123', "", "", "", :admin)
+#create_a_user('user2@hostname.com', 'user1234', "John Wick", "Pineapple", "512-123-1235")
+#create_a_user('user3@hostname.com', 'user1234', "Kevin Chavez", "Apple", "232-567-4234")
+#create_a_user('user4@hostname.com', 'user1234', "Paul Lee", "Orange", "185-323-3523")
 
 # Application Type Descriptions
 
@@ -542,7 +542,8 @@ questions_for_form[advertising_contract] = 	[
 		:answers => "[Half Page: 8.5-in x 5.5-in ($300 Advertisement Fee),
 		Quarter Page: 4.25-in x 5.5-in ($200 Advertisement Fee),
 		One Eigth Page: 4.25-in x 2.75-in ($100 Advertisement Fee),
-		Business Card Size: 3.5-in x 2-in ($50 Advertisement Fee)]",
+		Business Card Size: 3.5-in x 2-in ($50 Advertisement Fee),
+		No Advertising ($0 Advertisement Fee)]",
 		:question_type => :radio_button},
 	{:question => 'Additional Information
 		Deadline: August 31
