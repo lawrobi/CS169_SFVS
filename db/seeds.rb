@@ -27,10 +27,10 @@ end
 
 objects_to_create = {}
 
-#create_a_user('admin@hostname.com', 'admin123', "", "", "", :admin)
-#create_a_user('user2@hostname.com', 'user1234', "John Wick", "Pineapple", "512-123-1235")
-#create_a_user('user3@hostname.com', 'user1234', "Kevin Chavez", "Apple", "232-567-4234")
-#create_a_user('user4@hostname.com', 'user1234', "Paul Lee", "Orange", "185-323-3523")
+create_a_user('admin@hostname.com', 'admin123', "", "", "", :admin)
+create_a_user('user2@hostname.com', 'user1234', "John Wick", "Pineapple", "512-123-1235")
+create_a_user('user3@hostname.com', 'user1234', "Kevin Chavez", "Apple", "232-567-4234")
+create_a_user('user4@hostname.com', 'user1234', "Paul Lee", "Orange", "185-323-3523")
 
 # Application Type Descriptions
 
