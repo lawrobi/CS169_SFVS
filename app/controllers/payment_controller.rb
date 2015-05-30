@@ -30,7 +30,7 @@ class PaymentController < ActionController::Base
   private
   
   def get_paypal_response(query)
-    paypal_url_cmd = "https://www.sandbox.paypal.com/cgi-bin/webscr"
+    paypal_url_cmd = "https://www.paypal.com/cgi-bin/webscr"
     req_body = "cmd=_notify-validate&" + query
     url = URI.parse(paypal_url_cmd)
     req = Net::HTTP::Post.new(url.path) 
