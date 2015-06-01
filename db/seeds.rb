@@ -34,7 +34,7 @@ create_a_user('user4@hostname.com', 'user1234', "Paul Lee", "Orange", "185-323-3
 
 # Application Type Descriptions
 
-vendor_food_description = 'Vendors who Do sell or giveaway any food items.  
+vendor_food_description = 'Vendors who Do sell or giveaway any food items.
 					- All types of businesses can use this form.
 					- Non-profit organizations need to use another form.'
 
@@ -80,8 +80,8 @@ non_profit_description = 'Any IRS registered tax exempt organization.'
 
 restaurant_description = 'Caterers and restaurants who will sell food at the festival.'
 
-sponsor_definition = 'Any exhibitor or vendor who is willing to co-sponsor the event 
-					for a product exclusivity and also be included in the festival 
+sponsor_definition = 'Any exhibitor or vendor who is willing to co-sponsor the event
+					for a product exclusivity and also be included in the festival
 					advertising and promotional campaign at no additional cost.'
 # Application Types
 
@@ -128,7 +128,7 @@ objects_to_create[:Answers] = [
 	{:ans => "Sponsor", :questionnaire_id => 1, :leads_to => 4},
 	{:ans => non_profit.app_type, :questionnaire_id => 1, :leads_to => 5},
 	{:ans => restaurant_concessionaire.app_type, :questionnaire_id => 1, :leads_to => 6},
-	
+
 	{:ans => sponsor_food.app_type, :questionnaire_id => 4, :leads_to => 7},
 	{:ans => sponsor_non_food.app_type, :questionnaire_id => 4, :leads_to => 8},
 	{:ans => associate_sponsor_food.app_type, :questionnaire_id => 4, :leads_to => 9},
@@ -263,17 +263,17 @@ questions_for_form[food_item_contract] = [
 		:question_type => :message},
 	{:question => 'Food Guidelines (only Vegan foods are allowed)
 		All food items must fall under the following categories to be promoted at the World Vegetarian Festival.
-		
-		- Unpackaged vegan food or beverage samples may be sold or given away for free by Exhibitor in accordance 
+
+		- Unpackaged vegan food or beverage samples may be sold or given away for free by Exhibitor in accordance
 		with SF Health Department guidelines. Requires high risk city health permit of $207.
 
-		- Pre packaged vegan food items may be sold or given away by Exhibitors. 
+		- Pre packaged vegan food items may be sold or given away by Exhibitors.
 		Requires low risk city health permit of $105.
 
 		Use of recyclable, compostable or biodegradable supplies are highly encouraged in order to conserve the environment.
 
 		Non Food Guidelines
-		We only allow vegan items that have not have been tested on animals, and are free of leather, 
+		We only allow vegan items that have not have been tested on animals, and are free of leather,
 		fur, gelatin, silk, wool or any other animal derivatives.',
 		:question_type => :statement},
 	{:question => "Exhibit Registration
@@ -282,12 +282,12 @@ questions_for_form[food_item_contract] = [
 		one chair and one table (6' x 2.5').",
 		:question_type => :statement},
 	{:question => 'Exhibit Booth',
-		:answers => "[Regular Booth 'B' - Open Courtyard: Payment on or before Aug 15th ($150 Booth Fee),
-		Regular Booth 'B' - Open Courtyard: Payment after Aug 15th ($250 Booth Fee),
-		Regular Booth 'C' - Gallery Bldg: Payment on or before Aug 15th ($200 Booth Fee),
-		Regular Booth 'C' - Gallery Bldg: Payment after Aug 15th ($300 Booth Fee)]",
+		:answers => "[Regular Booth 'B' - Open Courtyard: Payment on or before Aug 15th ($250 Booth Fee),
+		Regular Booth 'B' - Open Courtyard: Payment after Aug 15th ($350 Booth Fee),
+		Regular Booth 'C' - Gallery Bldg: Payment on or before Aug 15th ($300 Booth Fee),
+		Regular Booth 'C' - Gallery Bldg: Payment after Aug 15th ($400 Booth Fee)]",
 		:question_type => :radio_button},
-	{:question => 'Additional Chair $5 Each', 
+	{:question => 'Additional Chair $5 Each',
 		:answers => "[0, 1 ($5 Chair Fee x1), 2 ($10 Chair Fee x2)]",
 		:question_type => :radio_button},
 	{:question => 'Will you need electricity? - $75 fee',
@@ -304,7 +304,7 @@ questions_for_form[non_food_contract] = [
 	{:question => 'Please provide a description of all items being displayed, promoted and/or sold, or N/A for none.',
 		:question_type => :message},
 	{:question => 'Non Food Guidelines
-		We only allow vegan items that have not have been tested on animals, and are free of leather, 
+		We only allow vegan items that have not have been tested on animals, and are free of leather,
 		fur, gelatin, silk, wool or any other animal derivatives.',
 		:question_type => :statement},
 	{:question => "Exhibit Registration
@@ -313,12 +313,12 @@ questions_for_form[non_food_contract] = [
 		one chair and one table (6' x 2.5').",
 		:question_type => :statement},
 	{:question => 'Exhibit Booth',
-		:answers => "[Regular Booth 'B' - Open Courtyard: Payment on or before Aug 15th ($150 Booth Fee),
-		Regular Booth 'B' - Open Courtyard: Payment after Aug 15th ($250 Booth Fee),
-		Regular Booth 'C' - Gallery Bldg: Payment on or before Aug 15th ($200 Booth Fee),
-		Regular Booth 'C' - Gallery Bldg: Payment after Aug 15th ($300 Booth Fee)]",
+		:answers => "[Regular Booth 'B' - Open Courtyard: Payment on or before Aug 15th ($250 Booth Fee),
+		Regular Booth 'B' - Open Courtyard: Payment after Aug 15th ($350 Booth Fee),
+		Regular Booth 'C' - Gallery Bldg: Payment on or before Aug 15th ($300 Booth Fee),
+		Regular Booth 'C' - Gallery Bldg: Payment after Aug 15th ($400 Booth Fee)]",
 		:question_type => :radio_button},
-	{:question => 'Additional Chair $5 Each', 
+	{:question => 'Additional Chair $5 Each',
 		:answers => "[0, 1 ($5 Chair Fee x1), 2 ($10 Chair Fee x2)]",
 		:question_type => :radio_button},
 	{:question => 'Will you need electricity? - $75 fee',
@@ -336,17 +336,17 @@ questions_for_form[sponsor_food_contract] = [
 		:question_type => :message},
 	{:question => 'Food Guidelines (only Vegan foods are allowed)
 		All food items must fall under the following categories to be promoted at the World Vegetarian Festival.
-		
-		- Unpackaged vegan food or beverage samples may be sold or given away for free by Exhibitor in accordance 
+
+		- Unpackaged vegan food or beverage samples may be sold or given away for free by Exhibitor in accordance
 		with SF Health Department guidelines. Requires high risk city health permit.
 
-		- Pre packaged vegan food items may be sold or given away by Exhibitors. 
+		- Pre packaged vegan food items may be sold or given away by Exhibitors.
 		Requires low risk city health permit.
 
 		Use of recyclable, compostable or biodegradable supplies are highly encouraged in order to conserve the environment.
 
 		Non Food Guidelines
-		We only allow vegan items that have not have been tested on animals, and are free of leather, 
+		We only allow vegan items that have not have been tested on animals, and are free of leather,
 		fur, gelatin, silk, wool or any other animal derivatives.',
 		:question_type => :statement},
 	{:question => "Sponsor Information
@@ -378,7 +378,7 @@ questions_for_form[sponsor_non_food_contract] = [
 	{:question => 'Please provide a description of all items being displayed, promoted and/or sold, or N/A for none.',
 		:question_type => :message},
 	{:question => 'Non Food Guidelines
-		We only allow vegan items that have not have been tested on animals, and are free of leather, 
+		We only allow vegan items that have not have been tested on animals, and are free of leather,
 		fur, gelatin, silk, wool or any other animal derivatives.',
 		:question_type => :statement},
 	{:question => "Sponsor Information
@@ -411,17 +411,17 @@ questions_for_form[associate_sponsor_food_contract] = [
 		:question_type => :message},
 	{:question => 'Food Guidelines (only Vegan foods are allowed)
 		All food items must fall under the following categories to be promoted at the World Vegetarian Festival.
-		
-		- Unpackaged vegan food or beverage samples may be sold or given away for free by Exhibitor in accordance 
+
+		- Unpackaged vegan food or beverage samples may be sold or given away for free by Exhibitor in accordance
 		with SF Health Department guidelines. Requires high risk city health permit of $207.
 
-		- Pre packaged vegan food items may be sold or given away by Exhibitors. 
+		- Pre packaged vegan food items may be sold or given away by Exhibitors.
 		Requires low risk city health permit of $105.
 
 		Use of recyclable, compostable or biodegradable supplies are highly encouraged in order to conserve the environment.
 
 		Non Food Guidelines
-		We only allow vegan items that have not have been tested on animals, and are free of leather, 
+		We only allow vegan items that have not have been tested on animals, and are free of leather,
 		fur, gelatin, silk, wool or any other animal derivatives.',
 		:question_type => :statement},
 	{:question => "Sponsor Information
@@ -450,7 +450,7 @@ questions_for_form[associate_sponsor_non_food_contract] = [
 	{:question => 'Please provide a description of all items being displayed, promoted and/or sold, or N/A for none.',
 		:question_type => :message},
 	{:question => 'Non Food Guidelines
-		We only allow vegan items that have not have been tested on animals, and are free of leather, 
+		We only allow vegan items that have not have been tested on animals, and are free of leather,
 		fur, gelatin, silk, wool or any other animal derivatives.',
 		:question_type => :statement},
 	{:question => "Sponsor Information
@@ -480,17 +480,17 @@ questions_for_form[restaurant_contract] = [
 		:question_type => :message},
 	{:question => 'Food Guidelines (only Vegan foods are allowed)
 		All food items must fall under the following categories to be promoted at the World Vegetarian Festival.
-		
-		- Unpackaged vegan food or beverage samples may be sold or given away for free by Exhibitor in accordance 
+
+		- Unpackaged vegan food or beverage samples may be sold or given away for free by Exhibitor in accordance
 		with SF Health Department guidelines. Requires high risk city health permit of $207.
 
-		- Pre packaged vegan food items may be sold or given away by Exhibitors. 
+		- Pre packaged vegan food items may be sold or given away by Exhibitors.
 		Requires low risk city health permit of $105.
 
 		Use of recyclable, compostable or biodegradable supplies are highly encouraged in order to conserve the environment.
 
 		Non Food Guidelines
-		We only allow vegan items that have not have been tested on animals, and are free of leather, 
+		We only allow vegan items that have not have been tested on animals, and are free of leather,
 		fur, gelatin, silk, wool or any other animal derivatives.',
 		:question_type => :statement},
 	{:question => "Exhibit Registration
@@ -498,7 +498,7 @@ questions_for_form[restaurant_contract] = [
 		Fee includes one booth space, one table and one chair.",
 		:question_type => :statement},
 	{:question => 'Food/Catering Booth',
-		:answers => '[Payment on or before Aug 15th ($150 Booth Fee),Payment after Aug 15th ($250 Booth Fee)]',
+		:answers => '[Payment on or before Aug 15th ($250 Booth Fee),Payment after Aug 15th ($350 Booth Fee)]',
 		:question_type => :radio_button},
 	{:question => 'Will you need electricity? - $75 fee',
 		:answers => "[Yes ($75 Electricity Fee), No]",
@@ -521,7 +521,7 @@ questions_for_form[non_profit_contract] = 	[
 	{:question => 'Non-Profit Booth',
 		:answers => "[Payment on or before Aug 15th ($165 Booth Fee), Payment after Aug 15th ($215 Booth Fee)]",
 		:question_type => :radio_button},
-	{:question => 'Additional Chair $5 Each', 
+	{:question => 'Additional Chair $5 Each',
 		:answers => "[0, 1 ($5 Chair Fee x1), 2 ($10 Chair Fee x2)]",
 		:question_type => :radio_button},
 	{:question => 'Will you need electricity? - $75 fee',
@@ -602,34 +602,34 @@ questions_for_form[advertising_associate_sponsor_contract] = 	[
 
 questions_for_form[conditions_of_agreement] = [
 	{:question => "Conditions of Agreement
-		1. The Contract for participation shall not become a binding contract between the Exhibitor 
-		and the San Francisco Vegetarian Society (hereafter referred to as SFVS) until the contract 
+		1. The Contract for participation shall not become a binding contract between the Exhibitor
+		and the San Francisco Vegetarian Society (hereafter referred to as SFVS) until the contract
 		has been signed by SFVS.
 
 		2. Exhibitors shall be responsible for the setup and tear down of their own exhibit.
 		All garbage shall be placed in appropriate trash containers and cardboard boxes must be broken apart for recycling.
-		A $50 cleaning fee may be assessed to booths not left clean as determined by SFVS and may result 
+		A $50 cleaning fee may be assessed to booths not left clean as determined by SFVS and may result
 		in Exhibitor's non-participation in future World Vegetarian Festival (WVF) celebration.
 
 		3. No Exhibitor shall exhibit any merchandise or service other than that specified in the contract.
 		The Exhibitor may not promote in their product display or literature any items that do not meet the SFVS
 		food and / or non-food guidelines.Exhibit space shall not be sublet or shared without the permission of SFVS.
-		
+
 		4. The Exhibitor's property shall be placed on display and exhibited at the Exhibitor's own risk and neither SFVS
 		nor the Recreation & Parks Dept of the City and County of San Francisco shall be responsible for the death or injury
 		to any person or for damage, including consequential damages, or loss of property of the Exhibitor, its officers,
 		agents, employees, or invitees resulting from any cause whatsoever and the Exhibitor hereby indemnifies and holds
 		SFVS and / or City and County of San Francisco harmless for any suit, action or claim arising out of any action
 		or failure to act by the Exhibitor.
-		
+
 		5. If the Exhibitor fails to comply in any respect with the terms, conditions, rules or regulations of this contract,
 		all rights of the Exhibitor hereunder shall cease and terminate.
-		
+
 		6. Should any contingency interrupt or prevent the holding of the WVF Celebration, including but not limited to war,
 		terrorism, acts of God, strikes, lockouts or other labor or individual disturbances, riots, failure to secure
 		materials or labor, fire, lighting, tempest, flood, explosion or any other cause, then SFVS shall in no way whatsoever
 		be liable to the Exhibitor.
-		
+
 		7. The Exhibitor will exhibit in a proper manner, and will keep the exhibit space open and staffed at all time during the
 		WVF Celebration hours. SFVS reserves the right to restrict exhibits to a maximum noise level and to suitable methods of
 		operation and display. SFVS shall have the final decision as to what constitutes a proper exhibit and such decision shall
@@ -638,30 +638,30 @@ questions_for_form[conditions_of_agreement] = [
 		objectionable to the WVF Celebration's intent. SFVS further reserves the right to relocate exhibits or exhibitors when in
 		its opinion such relocations are necessary to maintain the character and / or good order of the WVF Celebration.
 
-		8. The Exhibitor agrees that no display may be dismantled or goods removed during the entire period of the agreed upon 
-		time slot. The Exhibitor agrees also to remove its exhibit, equipment and other exhibit items from the grounds of the 
+		8. The Exhibitor agrees that no display may be dismantled or goods removed during the entire period of the agreed upon
+		time slot. The Exhibitor agrees also to remove its exhibit, equipment and other exhibit items from the grounds of the
 		WVF Celebration at the end of the agreed upon time slot. In the event of failure to do so, the Exhibitor agrees to
 		pay for such additional costs as may be incurred.
-		
-		9. The Exhibitor shall not: (a) commit any nuisance; (b) cause any unusual or objectionable smoke or odor to emanate 
-		from its space; (c) do anything which would interfere with the effectiveness of any utility, ventilating or 
+
+		9. The Exhibitor shall not: (a) commit any nuisance; (b) cause any unusual or objectionable smoke or odor to emanate
+		from its space; (c) do anything which would interfere with the effectiveness of any utility, ventilating or
 		air-conditioning systems on the facilities of the WVF Celebration, nor interfere with free access or passage to
 		the facilities of the WVF Celebration; (d) interfere with the effectiveness of or accessibility to the electrical,
-		plumbing, gas or compressed air systems; (e) overload any floor, ceiling or wall; (f) do or permit to be done any 
+		plumbing, gas or compressed air systems; (e) overload any floor, ceiling or wall; (f) do or permit to be done any
 		act which might invalidate any insurance policy carried by SFVS or the City and County of San Francisco.
-		
+
 		10. If the exhibit space is not occupied by the opening of the WVF Celebration, this will be considered as a no-show
 		and the space will be deemed forfeited. This forfeited space may be resold, reassigned or used by the SFVS management
 		without obligations on the part of SFVS for any refund whatsoever.
-		
+
 		11. The Exhibitor will confine its activities to the exhibit space allotted and will not solicit beyond the boundaries hereto.
-		
+
 		12. The SFVS reserves the right to decline any applications at its discretion.
 
 		Upon the original or facsimile copy of this contract being accepted and signed by an authorized
 		member of the SFVS, this becomes a binding agreement and the Company / Organization listed
 		above is subject to and agrees with all conditions stated on the contract.  SFVS reserves the right
-		to assign space in order to benefit the overall event.", 
+		to assign space in order to benefit the overall event.",
 		:answers => "[I certify that I have read the World Vegetarian Festival exhibitor information and contract
 		and agree to all terms and guidelines specified therein.]",
 		:question_type => :checkbox},
@@ -686,7 +686,7 @@ questions_for_form[health_permit_form] = [
 	{:question => 'Use of recyclable, compostable or biodegradable supplies are highly encouraged in order to conserve the environment.
 
 		Non Food Guidelines
-		We only allow vegan items that have not have been tested on animals, and are free of leather, 
+		We only allow vegan items that have not have been tested on animals, and are free of leather,
 		fur, gelatin, silk, wool or any other animal derivatives.',
 		:question_type => :statement},
 	{:question => 'Will you use a sterno?',
@@ -713,7 +713,7 @@ questions_for_form[sponsor_health_permit_form] = [
 	{:question => 'Use of recyclable, compostable or biodegradable supplies are highly encouraged in order to conserve the environment.
 
 		Non Food Guidelines
-		We only allow vegan items that have not have been tested on animals, and are free of leather, 
+		We only allow vegan items that have not have been tested on animals, and are free of leather,
 		fur, gelatin, silk, wool or any other animal derivatives.',
 		:question_type => :statement},
 	{:question => 'Will you use a sterno?',
@@ -739,7 +739,7 @@ questions_for_form[restaurant_health_permit_form] = [
 	{:question => 'Use of recyclable, compostable or biodegradable supplies are highly encouraged in order to conserve the environment.
 
 		Non Food Guidelines
-		We only allow vegan items that have not have been tested on animals, and are free of leather, 
+		We only allow vegan items that have not have been tested on animals, and are free of leather,
 		fur, gelatin, silk, wool or any other animal derivatives.',
 		:question_type => :statement},
 	{:question => 'Will you use a sterno?',
@@ -757,47 +757,47 @@ questions_for_form[restaurant_health_permit_form] = [
 questions_for_form[setup_instructions] = [
 	{:question => "Set-up and Clean-up
 		1. For your convenience, we have arranged a Friday set-up time from 2:00 - 4:00 p.m.
-		
-		2. On the day of the event, check-in and set-up time: 8:00 - 9:30 a.m. 
-		Please complete set up by 9:30 a.m. After 9:30 a.m., SFVS reserves the right 
+
+		2. On the day of the event, check-in and set-up time: 8:00 - 9:30 a.m.
+		Please complete set up by 9:30 a.m. After 9:30 a.m., SFVS reserves the right
 		to assign an empty booth without any further obligation.
 
-		3. The building facilities will be locked the evenings of Friday and Saturday. 
+		3. The building facilities will be locked the evenings of Friday and Saturday.
 		You may leave non-valuables items inside the Gallery. There are no security guards in the evening.
 
 		4. Exhibitors' gallery must be vacated Sunday by 7:00 p.m.
-		
-		5. Area(s) rented must be swept and, if necessary, mopped at the end of each day. 
-		Please bring your own brooms, mops and dust pans. A $50 cleaning fee may be assessed to booths 
+
+		5. Area(s) rented must be swept and, if necessary, mopped at the end of each day.
+		Please bring your own brooms, mops and dust pans. A $50 cleaning fee may be assessed to booths
 		not left clean as determined by SFVS.
-		
-		6. SFVS has GARBAGE, RECYCLING and COMPOST dumpsters adequately marked behind the 
-		building. Do not use the County Fair Building dumpster. Garbage must be taken with 
-		ou on departure or placed in the marked SFVS dumpster located at the back of the Gallery building. 
+
+		6. SFVS has GARBAGE, RECYCLING and COMPOST dumpsters adequately marked behind the
+		building. Do not use the County Fair Building dumpster. Garbage must be taken with
+		ou on departure or placed in the marked SFVS dumpster located at the back of the Gallery building.
 		Cardboard boxes must be broken apart for recycling.
 
-		7. Screws, tacks or tape must not be used to fasten items to walls, 
+		7. Screws, tacks or tape must not be used to fasten items to walls,
 		cabinets,windowsills, doorways or ceiling. Scotch brand, blue painter's tape may be used.
 
-		8. If you need to hang a heavy banner, you may need to supply your own banner 
+		8. If you need to hang a heavy banner, you may need to supply your own banner
 		stands and you are advised to do your set-up on a Friday.
 
 		9. Flyers, advertising or information materials can only be posted in the exhibitor's exhibit space.
 
-		10. Loading and unloading is located at the Lincoln Way entrance. 
-		No permanent parking allowed. These are reserved spaces and your vehicle 
+		10. Loading and unloading is located at the Lincoln Way entrance.
+		No permanent parking allowed. These are reserved spaces and your vehicle
 		may be towed by the County Fair building management.
 
-		11. Parking inside the park is limited to 4 hours. 
-		You may park on Lincoln Way or at the UCSF garage (See directions page). 
+		11. Parking inside the park is limited to 4 hours.
+		You may park on Lincoln Way or at the UCSF garage (See directions page).
 		There is also a whole day public garage parking located in the Park by the Japanese Tea Garden.
 
 		12. No propane gas tank is allowed for heating or cooking inside the building.
 
-		13. No animals or pets are allowed inside the premises with the exception of 
+		13. No animals or pets are allowed inside the premises with the exception of
 		guide or service dogs or animals needed by the disabled.
 
-		14. Emergency and first aid services will be provided at the SFVS Volunteer Booth 
+		14. Emergency and first aid services will be provided at the SFVS Volunteer Booth
 		located at the middle of the Gallery.",
 
 		:answers => "[I Agree to the terms and conditions]",
